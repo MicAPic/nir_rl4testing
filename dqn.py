@@ -206,12 +206,12 @@ class Agent:
 
             if evaluate:
                 print(f"Episode {i}, Score: {score}, "
-                      # f"bug found: {bug_spotted}, "
+                      f"bug found: {bug_spotted}, "
                       f"average score: {avg_score}")
             else:
                 print(f"Episode {i}, Score: {score} (ε = {self.epsilon}), "
                       f"lr: {self.q_net.optimizer.lr(self.iterations)}, "
-                      f"bug found: {bug_spotted}, "
+                      # f"bug found: {bug_spotted}, "
                       f"average score: {avg_score}")
 
         if not evaluate:
